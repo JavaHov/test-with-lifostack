@@ -3,20 +3,21 @@ package lifostack;
 public class LIFOStack {
 
     private boolean isEmpty = true;
+    private int[] values = new int[2];
+    private int counter = 0;
 
     public boolean empty() {
 
-        return isEmpty;
+        return counter == 0;
     }
 
     public void push(int i) {
 
-        isEmpty = false;
+        values[counter++] = i;
     }
 
     public int pop() {
 
-        isEmpty = true;
-        return 1;
+        return values[--counter];
     }
 }

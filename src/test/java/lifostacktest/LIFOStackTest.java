@@ -33,4 +33,14 @@ class LIFOStackTest {
         assertEquals(expected, lifoStack.empty());
     }
 
+    @Test
+    void testPushPushPopEmptyFalse() {
+
+        lifoStack.push(1);
+        lifoStack.push(3);
+        lifoStack.pop();
+        boolean expected = false;
+        assertEquals(expected, lifoStack.empty());
+    }
+
 }
