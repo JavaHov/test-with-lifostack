@@ -1,23 +1,26 @@
 package lifostack;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LIFOStack {
 
     private boolean isEmpty = true;
-    private int[] values = new int[3];
+    private List<Integer> values = new ArrayList<>();
     private int counter = 0;
 
     public boolean empty() {
 
-        return counter == 0;
+        return values.size() == 0;
     }
 
     public void push(int i) {
 
-        values[counter++] = i;
+        values.add(i);
     }
 
     public int pop() {
 
-        return values[--counter];
+        return values.remove(values.size() -1);
     }
 }
