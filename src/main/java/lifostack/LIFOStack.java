@@ -3,7 +3,7 @@ package lifostack;
 public class LIFOStack {
 
     private boolean isEmpty = true;
-    private int[] values = new int[2];
+    private int[] values = new int[3];
     private int counter = 0;
 
     public boolean empty() {
