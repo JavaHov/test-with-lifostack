@@ -13,4 +13,10 @@ public class LIFOStack {
 
         isEmpty = false;
     }
+
+    public int pop() {
+
+        isEmpty = true;
+        return 1;
+    }
 }
